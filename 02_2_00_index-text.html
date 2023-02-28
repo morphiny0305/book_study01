@@ -4,7 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tndex-text</title>
+    <title>index-text</title>
+    <style>
+      table{
+        width: 70%; /* 표의 너비 */
+        border: 1px solid #222; /* 1픽셀 표 테두리 */
+        border-collapse: collapse; /* 중복되는 표와 셀의 테두리를 한 줄로 표시*/
+      }
+      thead{
+        background: #eee;
+      }
+      th, td{
+        border: 1px solid #222; /* 1픽셀 표 테두리 */
+        padding: 5px; /* 셀 테두리와 셀 내용 사이의 여백 (패딩) */
+        font-size: 0.8em; /* 셀의 글자 크기 */
+      }
+    </style>
   </head>
   <body>
     <div id="container">
@@ -14,7 +29,7 @@
 
           </div>
           <div id="detail">
-                             
+
           </div>
           <div id="sns">
               <h2>SNS</h2>
@@ -57,7 +72,32 @@
           <!-- 학력 -->
           <section>
               <h2 class="subtitle">Education</h2>
-
+            <table>
+              <caption>학 력 사 항</caption>
+                <thead>
+                  <tr>
+                    <th>출신학교</th>
+                    <th>전공</th>
+                    <th>기간</th>
+                    <th>구분</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>멍멍 데학교</td>
+                    <td>멍멍멍 전공</td>
+                    <td>0000. 3 ~ 0000. 5</td>
+                    <td>졸업</td>
+                  </tr>
+                  <tr>
+                    <td>멍멍 고등학교</td>
+                    <td>멍멍 전공</td>
+                    <td>0000. 3 ~ 0000. 5</td>
+                    <td>졸업</td>
+                  </tr>
+                </tbody>
+              
+            </table>
           </section>
       </div>        
   </div>

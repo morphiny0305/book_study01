@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>표에서 열끼리 묶기</title>
+    <style>
+      table, th, td {
+			border:1px solid #ccc;
+		}
+		td {
+			width:100px;  /* 셀 너비 */
+			height:30px;  /* 셀 높이 */
+		}
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>colgroup 연습</caption>
+      <colgroup>
+        <col>
+        <col span="2" style="background: skyblue;">
+        <col style="background: yellow;">
+      </colgroup>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+</html>
