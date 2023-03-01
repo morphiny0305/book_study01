@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>구글 웹 폰트 사용하기</title>
+  <style>
+    @font-face {
+      font-family: 'trana';
+      src: local(trana),
+      url('trana.eot'),
+      url('trana.ttf') format('truetype'),
+      url('trana.woff') format('woff');
+    }
+    .w-font{
+      font-family: 'trana';
+    }
+    p{font-size: 30px;}
+    
+  </style>
+</head>
+<body>
+  <p>Using Default Fonts</p>
+  <p class="w-font">Using Trana Fonts</p>
+</body>
+</html>

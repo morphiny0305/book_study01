@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css 속성에 브라우저 접두사 자동으로 붙이기</title>
+  <script src="./prefixfree.min.js"></script>
+  <style>
+    .box{
+			position:absolute;
+			left:50px;
+			top:70px;
+			width:100px;
+			height:60px;
+			background:#fff;
+			border:2px solid green;
+			text-align:center;
+			line-height:60px;
+		}
+    .box:hover{
+      transform: rotate(15deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="box">Mouse Over</div>
+</body>
+</html>
