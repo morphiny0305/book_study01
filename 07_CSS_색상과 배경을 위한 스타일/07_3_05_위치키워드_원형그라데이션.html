@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>위치키워드로 원형 그라데이션 모양</title>
+    <style>
+      div {
+        width: 500px;
+        height: 300px;
+      }
+      .grad1 { 
+				background: blue;
+				background: -webkit-radial-gradient(10% 10%, circle, white, blue);
+				background: -moz-radial-gradient(10% 10%, circle, white, blue);
+				background: -o-radial-gradient(10% 10%, circle, white, blue);
+				background: radial-gradient(circle at 10% 10%, white, blue);
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="grad1"></div>
+  </body>
+</html>

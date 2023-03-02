@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>선형 그라데이션의 색상 중지점 지정하기</title>
+  <style>
+    div {
+			width:500px;
+			height:300px;
+		}
+  	.grad {
+  		background: #06f; /* css3 미지원 브라우저 */
+      /* 시작색상, 중지 점 색상과 위치 (30% 위치), 끝 색상 */
+  		background-image: -webkit-linear-gradient(top, #06f, white 30%, #06f); /* 초기 모던 브라우저 */
+  		background-image: -moz-linear-gradient(bottom, #06f, white 30%, #06f); /* 초기 모던 브라우저 */
+  		background: -o-linear-gradient(bottom, #06f, white 30%, #06f); /* 초기 모던 브라우저 */
+  		background: linear-gradient(to bottom, #06f, white 30%, #06f); /* 최신 모던 브라우저 */
+  	}
+  </style>
+</head>
+<body>
+  <div class="grad"></div>
+</body>
+</html>

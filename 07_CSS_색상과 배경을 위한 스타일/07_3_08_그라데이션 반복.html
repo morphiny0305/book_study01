@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>그라데이션 반복하기 - 기본</title>
+    <style>
+      div {
+		width:500px;
+		height:300px;
+		margin:10px;
+	}
+  .grad1{ 
+    background: red;
+    background: -webkit-repeating-linear-gradient(yellow, red 20px);
+    background: -moz-repeating-linear-gradient(yellow, red 20px);
+    background: -o-repeating-linear-gradient(yellow, red 20px);
+    background: repeating-linear-gradient(yellow, red 20px);
+    
+  }
+  .grad2{ 
+    background: red;
+    background: -webkit-repeating-linear-gradient(yellow, yellow 20px, red 20px, red 40px);
+    background: -moz-repeating-linear-gradient(yellow, yellow 20px, red 20px, red 40px);
+    background: -o-repeating-linear-gradient(yellow, yellow 20px, red 20px, red 40px);
+    background: repeating-linear-gradient(yellow, yellow 20px, red 20px, red 40px);
+    
+  }
+  .grad3{background: red;
+    background: -webkit-repeating-radial-gradient(circle, white, white 10%, #ccc 10%, #ccc 20%);
+    background: -moz-repeating-radial-gradient(circle, white, white 10%, #ccc 10%, #ccc 20%);
+    background: -o-repeating-radial-gradient(circle, white, white 10%, #ccc 10%, #ccc 20%);
+    background: repeating-radial-gradient(circle, white, white 10%, #ccc 10%, #ccc 20%);}
+    </style>
+  </head>
+  <body>
+    <div class="grad1"></div>
+    <div class="grad2"></div>
+    <div class="grad3"></div>
+  </body>
+</html>
