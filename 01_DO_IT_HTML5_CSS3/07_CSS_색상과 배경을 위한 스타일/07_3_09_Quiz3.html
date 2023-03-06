@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>quiz3</title>
+    <style>
+      body {
+				font-family: "맑은 고딕", 돋움;
+			}
+			.container {
+        background: url(./images/apple-bg.jpg) no-repeat;
+        background-size: cover;
+				position: relative;
+				width: 600px;
+				height: 400px;
+				padding: 20px;
+				border: 1px solid #ccc;
+			}
+
+			.content {
+        background: rgba(255, 255, 255, 0.5);
+				position: absolute;
+				top: 300px;
+				width: 90%;
+				padding: 10px;
+			}
+
+			h1 {
+				font-size: 30px;
+				text-align: center;
+			}
+
+			p {
+				font-size: 16px;
+				line-height: 25px;
+			}
+    </style>
+  </head>
+  <body>
+    <!-- 조건 -->
+    <!-- 
+      1. 영역 전체를 감싸는 스타일은 .container이고 텍스트 영역을 감싸는 스타일은 .content
+      2. 영역 전체에 배경 이미지(image/apple-bg.jpg)를 삽입하는데 반복하지 않고 영역 전체를 덮을 수 있도록 함 (.container 스타일에 속성 추가)
+      3. 배경 이미지를 추가하면 텍스트가 눈에 잘 띄지 않음. 텍스트 영역에 흰색 배경을 깔되 너무 진하지 않게 불투명도 0.5 지정 (.content 스타일에 속성 추가)
+      -->
+      <div class="container">
+        <div class="content">
+          <h1>하루 한 알의 사과는 의사를 멀리 한다</h1>
+        </div>
+      </div>
+  </body>
+</html>
