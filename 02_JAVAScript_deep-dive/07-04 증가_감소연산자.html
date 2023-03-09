@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>증가/감소 연산자</title>
+</head>
+<body>
+  <script>
+    var x = 5, result;
+
+    // 선 할당 후 증가 (postfix increment operator)
+    result = x++;
+    console.log(result, x); // 5 6
+    
+    // 선 증가 후 할당 (prefix increment operator)
+    result = ++x;
+    console.log(result, x); // 7 7
+
+    // 선 할당 후 감소 (postfix decrement operator)
+    result = x--;
+    console.log(result, x); // 7 6
+    
+    // 선 감소 후 할당 (prefix decrement operator)
+    result = --x;
+    console.log(result, x); // 5 5
+  </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>+ 단항 연산자/숫자타입이 아닌 피연산자</title>
+</head>
+<body>
+  <script>
+    var x = '1 ';
+
+    //문자열을 숫자 타입으로 변환
+    console.log(+x); // 1
+    // 부수 효과는 없음.
+    console.log(x); // "1"
+
+    // 불리언 값을 숫자 타입으로 변환
+    x = true;
+    console.log(+x); // 1
+    // 부수 효과는 없음
+    console.log(x); // true
+
+    // 불리언 값을 숫자 타입으로 변환
+    x = false;
+    console.log(+x); // 0
+    // 부수 효과는 없음
+    console.log(x); // false
+
+    // 문자열을 숫자로 타입 변환할 수 없으므로 NaN을 반환
+    x = 'Hello';
+    console.log(+x); // NaN
+    // 부수 효과는 없음
+    console.log(x); // "Hello"
+  </script>
+</body>
+</html>
