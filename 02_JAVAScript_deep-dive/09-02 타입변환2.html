@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>타입변환2</title>
+</head>
+<body>
+  <script>
+    var x = 10;
+    // 암묵적 타입 변환
+    // 문자열 연결 연산자는 숫자 타입 x의 값을 바탕으로 새로운 문자열을 생성
+
+    var str = x + '';
+    console.log(typeof str, str); // string 10
+
+    // x 변수의 값이 변경된 것은 아님
+    console.log(typeof x, x); // number 10
+  </script>
+</body>
+</html>

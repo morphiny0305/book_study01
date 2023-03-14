@@ -4,18 +4,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>레이블 문</title>
+<title>continue - for문</title>
 </head>
 <body>
   <script>
-    // foo 라는 식별자가 붙은 레이블 블록문
-    foo : {
-      console.log(1);
-      break foo; // foo 레이블 블록문 탈출한다.
-      console.log(2);
+    var string = 'Hello World.';
+    var search = 'l';
+    var count = 0;
+    
+    for (var i = 0 ; i < string.length ; i++){
+      // 'l' 이면 카운트가 증가시킴
+      if (string[i] === search) count++;
     }
-
-    console.log('done!');
   </script>
 </body>
 </html>

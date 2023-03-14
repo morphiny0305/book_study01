@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>암묵적 타입 변환</title>
+</head>
+<body>
+  <script>
+    // 피연산자가 모두 문자열 타입이어야 하는 문맥
+    '10' + 2 // -> '102'
+
+    // 피연산자가 모두 숫자 타입이어야 하는 문맥
+    5 * '10' // -> 50
+
+    // 피연산자가 또는 표현식이 불리언 타입이어야 하는 문맥
+    !0 // -> true
+    if (1){ }
+  </script>
+</body>
+</html>
