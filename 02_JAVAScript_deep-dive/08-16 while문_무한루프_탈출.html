@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>while문_무한루프_탈출</title>
+</head>
+<body>
+  <script>
+    var count = 0;
+
+    // 무한루프
+    while (true)
+{
+  console.log(count);
+  count++;
+  // count가 3이면 코드 블록을 탈출함
+  if (count === 3) break;
+} // 0 1 2
+  </script>
+</body>
+</html>
